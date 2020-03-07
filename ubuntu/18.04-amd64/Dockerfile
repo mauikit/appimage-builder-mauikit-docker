@@ -9,7 +9,7 @@ RUN curl https://origin.archive.neon.kde.org/public.key -sS | apt-key add -
 RUN apt-get update
 
 # install toolchain
-RUN apt-get install -y g++ cmake git gettext checkinstall
+RUN apt-get install -y g++ cmake git gettext checkinstall proot
 
 # install mauikit dependencies
 RUN apt-get install -y libkf5configwidgets-dev libkf5kio-dev libkf5service-dev libkf5config-dev \
