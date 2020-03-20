@@ -1,4 +1,4 @@
-FROM appimagecrafters/appimage-builder:ubuntu-18.04-arm64
+FROM appimagecrafters/appimage-builder
 
 RUN apt-get update
 RUN apt-get install curl -y

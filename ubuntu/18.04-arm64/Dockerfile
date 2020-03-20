@@ -48,7 +48,7 @@ RUN mkdir -p \
         libqt5webkit5-dev:arm64 libqt5webchannel5-dev:arm64 libqt5virtualkeyboard5-dev:arm64 \
         libqt5sql5-sqlite:arm64 libkf5auth-dev:arm64 libkf5coreaddons-dev:arm64 libkf5bookmarks-dev:arm64 \
         libkf5widgetsaddons-dev:arm64 libkf5completion-dev:arm64 libkf5codecs-dev:arm64 \
-        libtag1-dev:arm64 libkf5contacts-dev:arm64 libkf5people-dev:arm64 ; \
+        libtag1-dev:arm64 libkf5contacts-dev:arm64 libkf5people-dev:arm64 libfam0:arm64; \
 
     # extract downloaded files
     for DEB_FILE in var/cache/apt/archives/*.deb; do \
