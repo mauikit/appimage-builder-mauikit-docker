@@ -14,7 +14,7 @@ RUN apt-get install -y g++ cmake git gettext checkinstall proot
 # install mauikit dependencies
 RUN apt-get install -y libkf5configwidgets-dev libkf5kio-dev libkf5service-dev libkf5config-dev \
   libkf5notifications-dev libkf5i18n-dev extra-cmake-modules libqt5svg5-dev qtquickcontrols2-5-dev \
-  qtdeclarative5-dev qtwebengine5-dev libkf5syntaxhighlighting-dev
+  qtdeclarative5-dev qtwebengine5-dev libkf5syntaxhighlighting-dev libkf5contacts-dev libkf5people-dev
 
 # Build mauikit
 RUN git clone https://invent.kde.org/kde/mauikit.git /tmp/mauikit --depth=1 --branch master

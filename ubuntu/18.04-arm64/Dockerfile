@@ -1,4 +1,4 @@
-FROM appimagecrafters/appimage-builder:ubuntu-18.04-arm64
+FROM appimagecrafters/appimage-builder
 
 RUN apt-get update
 RUN apt-get install curl -y
@@ -43,7 +43,12 @@ RUN mkdir -p \
         libkf5configwidgets-dev:arm64 libkf5kio-dev:arm64 \
         libkf5service-dev:arm64 libkf5config-dev:arm64 libkf5notifications-dev:arm64 libkf5i18n-dev:arm64 \
         extra-cmake-modules:arm64 libqt5svg5-dev:arm64 qtquickcontrols2-5-dev:arm64 qtdeclarative5-dev:arm64 \
-        qtwebengine5-dev:arm64 libkf5syntaxhighlighting-dev:arm64; \
+        qtwebengine5-dev:arm64 libkf5syntaxhighlighting-dev:arm64 libqt5websockets5-dev:arm64 \
+        qtmultimedia5-dev:arm64 libqt5webview5-dev:arm64 libqt5x11extras5-dev:arm64 \
+        libqt5webkit5-dev:arm64 libqt5webchannel5-dev:arm64 libqt5virtualkeyboard5-dev:arm64 \
+        libqt5sql5-sqlite:arm64 libkf5auth-dev:arm64 libkf5coreaddons-dev:arm64 libkf5bookmarks-dev:arm64 \
+        libkf5widgetsaddons-dev:arm64 libkf5completion-dev:arm64 libkf5codecs-dev:arm64 \
+        libtag1-dev:arm64 libkf5contacts-dev:arm64 libkf5people-dev:arm64 ; \
 
     # extract downloaded files
     for DEB_FILE in var/cache/apt/archives/*.deb; do \
